@@ -1,0 +1,14 @@
+{
+  "name": "tech-challenge-books",
+  "version": "1.0.0",
+  "description": "API Node.js + Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Henrique Bernardo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
