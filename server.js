@@ -1,4 +1,4 @@
-const app = require("./app");
+const app = require("./app");//import app
 const port = 3000;
 
 //Start the server
