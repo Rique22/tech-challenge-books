@@ -41,5 +41,5 @@ app.delete('/livros/:id', async (req, res) => {
     res.status(200).send('Livro removido com sucesso');
 });
 
-//exporting app.js
+//exporting app
 module.exports = app;
