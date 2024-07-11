@@ -43,7 +43,7 @@ async function connect() {
 }
 
 //table name
-const table = 'books';
+const table = process.env.TABLE;
 
 /**
  * Select all books
