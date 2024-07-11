@@ -1,5 +1,6 @@
 const db = require("../db.js");//import db.js
 
+//select all
 const selectAll = async (req, res) => {
     try {
         const books = await db.selectionBooks();
@@ -9,6 +10,7 @@ const selectAll = async (req, res) => {
     }
 };
 
+//select one
 const selectOne = async (req, res) => {
     try {
         const book = await db.selectionBook(req.params.id);
@@ -18,6 +20,7 @@ const selectOne = async (req, res) => {
     }
 };
 
+//insert
 const insert = async (req, res) => {
     try {
         await db.insertBook(req.body);
@@ -27,6 +30,7 @@ const insert = async (req, res) => {
     }
 };
 
+//update
 const update = async (req, res) => {
     try {
         await db.updateBook(req.params.id, req.body);
@@ -36,6 +40,7 @@ const update = async (req, res) => {
     }
 };
 
+//delete
 const deleteOne = async (req, res) => {
     try {
         await db.deleteBook(req.params.id);
@@ -45,4 +50,5 @@ const deleteOne = async (req, res) => {
     }
 };
 
+//exporting routers
 module.exports = {selectAll, selectOne, insert, update, deleteOne};
