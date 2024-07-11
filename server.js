@@ -4,9 +4,9 @@
  * @author Henrique Bernardo
  * @version 1.0
  */
-
+require('dotenv').config();
 const app = require('./src/app.js');//import app.js
-const port = 3000;//localhost port
+const port = process.env.PORT;//localhost port
 
 //Start server
 app.listen(port, () => {

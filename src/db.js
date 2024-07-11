@@ -18,11 +18,11 @@ async function connect() {
   const { Pool } = require('pg');//exporting pg library
   //configuring access
   const pool = new Pool({
-    user: 'postgres.dsbbfzqsetikyhtkikuo',
-    host: 'aws-0-sa-east-1.pooler.supabase.com',
-    database: 'postgres',
-    password: 'n8jQJasW8K3yE5Sc',
-    port: 6543
+    user: process.env.POSTGRES_USER,
+    host: process.env.POSTGRES_HOST,
+    database: process.env.POSTGRES_DB,
+    password: process.env.POSTGRES_PASSWORD,
+    port: process.env.POSTGRES_PORT
   });
 
   //test connection
