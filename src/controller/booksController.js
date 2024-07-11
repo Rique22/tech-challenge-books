@@ -1,4 +1,4 @@
-const db = require("../db.js");//import db.js
+const db = require("../connectiondb/db.js");//import db.js
 
 //select all
 const selectAll = async (req, res) => {
