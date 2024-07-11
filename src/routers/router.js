@@ -7,7 +7,7 @@
 
 const express = require('express');//import express
 const router = express.Router();//store router
-const booksController = require("./controller/booksController.js");//import db.js
+const booksController = require("../controller/booksController.js");//import booksController.js
 router.use(express.json());//permission to use json
 
 //select all books
