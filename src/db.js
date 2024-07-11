@@ -12,30 +12,34 @@
  * @returns return database connection
  */
 async function connect() {
-  if (global.connection)
-    return global.connection.connect();
-
-  const { Pool } = require('pg');//exporting pg library
-  //configuring access
-  const pool = new Pool({
-    user: process.env.POSTGRES_USER,
-    host: process.env.POSTGRES_HOST,
-    database: process.env.POSTGRES_DB,
-    password: process.env.POSTGRES_PASSWORD,
-    port: process.env.POSTGRES_PORT
-  });
-
-  //test connection
-  const books = await pool.connect();
-  console.log("Criou pool de conexões no PostgreSQL!");
-
-  const res = await books.query('SELECT NOW()');
-  console.log(res.rows[0]);
-  books.release();
-
-  //saving to always use the same one
-  global.connection = pool;
-  return pool.connect();
+  try{
+    if (global.connection)
+      return global.connection.connect();
+  
+    const { Pool } = require('pg');//exporting pg library
+    //configuring access
+    const pool = new Pool({
+      user: process.env.POSTGRES_USER,
+      host: process.env.POSTGRES_HOST,
+      database: process.env.POSTGRES_DB,
+      password: process.env.POSTGRES_PASSWORD,
+      port: process.env.POSTGRES_PORT
+    });
+  
+    //test connection
+    const books = await pool.connect();
+    console.log("Criou pool de conexões no PostgreSQL!");
+  
+    const res = await books.query('SELECT NOW()');
+    console.log(res.rows[0]);
+    books.release();
+  
+    //saving to always use the same one
+    global.connection = pool;
+    return pool.connect();
+  }catch(erro){
+    console.error(erro);
+  }
 }
 
 //table name
