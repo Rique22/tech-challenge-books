@@ -19,15 +19,17 @@
   </header>
 
   <main class="container-fluid">
-    <div class="card" id="card">
+    <div class="card text-center" id="card">
       <form class="row">
-        <button type="button" id="insertbutton">Inserir livro</button>
-        <button type="button" id="selectbutton">Selecionar livro</button>
-        <button type="button" id="updatebutton">Atualizar livro</button>
-        <button type="button" id="deletebutton">Deletar livro</button>
+        <div class="row text-center" id="rowbutton">
+          <div class="col-3 text-center"><button type="button" id="insertbutton">Adicionar</button></div>
+          <div class="col-3 text-center"><button type="button" id="selectbutton">Selecionar</button></div>
+          <div class="col-3 text-center"><button type="button" id="updatebutton">Atualizar</button></div>
+          <div class="col-3 text-center"><button type="button" id="deletebutton">Deletar</button></div>
+        </div>
 
         <div class="mb-3" id="bookID">
-          <label class="form-label">ID</label>
+          <label class="form-label">ID:</label>
           <input class="form-control" type="text" placeholder="1" id="inputBookID">
         </div>
 

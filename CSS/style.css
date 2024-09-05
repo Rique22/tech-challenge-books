@@ -39,10 +39,15 @@ form{
     background-color: white;
     position: relative;
     top: 5%;
-    left: 9%;
-    width: 700px;
+    width: 99%;
+    gap: 10px;
     height: 440px;
     border-radius: 5%;
+}
+
+#rowbutton{
+    align-content: center;
+    justify-content: center;
 }
 
 #insertbutton{
@@ -52,9 +57,6 @@ form{
     height: 30px;
     font-size:small;
     color: white;
-    position: relative;
-    left: 56px;
-    top: 30px;
     border-radius: 5%;
 }
 
@@ -65,9 +67,6 @@ form{
     height: 30px;
     font-size:small;
     color: white;
-    position: relative;
-    left: 76px;
-    top: 30px;
     border-radius: 5%;
 }
 
@@ -78,9 +77,6 @@ form{
     height: 30px;
     font-size:small;
     color: white;
-    position: relative;
-    left: 86px;
-    top: 30px;
     border-radius: 5%;
 }
 
@@ -91,9 +87,6 @@ form{
     height: 30px;
     font-size:small;
     color: white;
-    position: relative;
-    left: 66px;
-    top: 30px;
     border-radius: 5%;
 }
 
@@ -175,8 +168,6 @@ input{
     display: flex;
     background-color: white;
     position: relative;
-    top: 60px;
-    left: 9%;
     width: 700px;
     height: 370px;
     border-radius: 5%;
@@ -188,8 +179,4 @@ input{
 
 #row{
     font-size: smaller;
-}
-
-@media screen and (min-width: 720px), (min-height: 240px){
-    
 }
