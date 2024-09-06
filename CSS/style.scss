@@ -1,0 +1,193 @@
+@import "./variable.scss";
+
+//Styling body
+body {
+    display: $display;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 10px;
+}
+
+header {
+    width: $width-max;
+    text-align: $center;
+    height: 60px;
+    background-color: $primary-color;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+h1 {
+    color: $secondary-color;
+}
+
+main {
+    display: $display;
+    justify-content: $center;
+    align-items: $center;
+    width: $width-max;
+    gap: 10px;
+    height: 1200px;
+    background-color: $secondary-color;
+}
+
+#card {
+    display: $display;
+    justify-content: $center;
+    align-items: $center;
+    width: 60%;
+    height: 500px;
+    background-color: $primary-color;
+    border-radius: 5%;
+}
+
+form {
+    display: $display;
+    justify-content: $center;
+    align-content: $center;
+    background-color: $secondary-color;
+    width: 99%;
+    height: 440px;
+    border-radius: 5%;
+}
+
+#rowbutton {
+    display: $display;
+    width: $width-max;
+    height: 50px;
+}
+
+#insertbutton {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    width: 120px;
+    height: 30px;
+    font-size: $font-size;
+    color: $secondary-color;
+    border-radius: 5%;
+}
+
+#updatebutton {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    width: 120px;
+    height: 30px;
+    font-size: $font-size;
+    color: $secondary-color;
+    border-radius: 5%;
+}
+
+#deletebutton {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    width: 120px;
+    height: 30px;
+    font-size: $font-size;
+    color: $secondary-color;
+    border-radius: 5%;
+}
+
+#selectbutton {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    width: 130px;
+    height: 30px;
+    font-size: $font-size;
+    color: $secondary-color;
+    border-radius: 5%;
+}
+
+#selectallbutton {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    width: 130px;
+    height: 30px;
+    font-size: $font-size;
+    color: $secondary-color;
+    border-radius: 5%;
+}
+
+#labelinput{
+    display: $display;
+    justify-content: $center;
+    align-items: $center;
+    position: relative;
+    bottom: 10px;
+}
+
+#bookID {
+    height: 80px;
+}
+
+#bookName {
+    height: 80px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    height: 35px;
+}
+
+#authorName {
+    height: 80px;
+}
+
+#publishingCompanyName {
+    height: 80px;
+}
+
+#buttons {
+    width: $width-max;
+}
+
+#confirmButton {
+    background-color: green;
+    border-color: green;
+    width: 100px;
+    height: 30px;
+    font-size: $font-size;
+    color: $secondary-color;
+    border-radius: 5%;
+}
+
+#cancelButton {
+    background-color: red;
+    border-color: red;
+    width: 100px;
+    height: 30px;
+    font-size: $font-size;
+    color: $secondary-color;
+    border-radius: 5%;
+}
+
+#card2 {
+    display: $display;
+    justify-content: $center;
+    align-items: $center;
+    width: 95%;
+    height: 600px;
+    background-color: $primary-color;
+    border-radius: 5%;
+}
+
+#table {
+    background-color: $secondary-color;
+    width: 99%;
+    height: 550px;
+    border-radius: 5%;
+}
+
+#col {
+    font-size: $font-size;
+}
+
+#row {
+    font-size: $font-size;
+}

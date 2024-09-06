@@ -1,182 +1,192 @@
-body{
-    display: flexbox;
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  gap: 10px;
 }
 
-header{
-    width: 100%;
-    height: 60px;
-    text-align: center;
-    background-color: rgb(0, 0, 128);
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: black;
+header {
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  background-color: rgb(0, 0, 128);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 3px;
+  border-style: solid;
+  border-color: black;
 }
 
-h1{
-    color: white;
+h1 {
+  color: white;
 }
 
-main{
-    width: 100%;
-    height: 1000px;
-    align-content: center;
-    background-color: white;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  height: 1200px;
+  background-color: white;
 }
 
-#card{
-    width: 825px;
-    height: 910px;
-    left: 16.5%;
-    background-color: rgb(0, 0, 128);
-    border-radius: 5%;
+#card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 500px;
+  background-color: rgb(0, 0, 128);
+  border-radius: 5%;
 }
 
-form{
-    display: flex;
-    background-color: white;
-    position: relative;
-    top: 5%;
-    width: 99%;
-    gap: 10px;
-    height: 440px;
-    border-radius: 5%;
+form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  width: 99%;
+  height: 440px;
+  border-radius: 5%;
 }
 
-#rowbutton{
-    align-content: center;
-    justify-content: center;
+#rowbutton {
+  display: flex;
+  width: 100%;
+  height: 50px;
 }
 
-#insertbutton{
-    background-color: rgb(0, 0, 128);
-    border-color: rgb(0, 0, 128);
-    width: 120px;
-    height: 30px;
-    font-size:small;
-    color: white;
-    border-radius: 5%;
+#insertbutton {
+  background-color: rgb(0, 0, 128);
+  border-color: rgb(0, 0, 128);
+  width: 120px;
+  height: 30px;
+  font-size: small;
+  color: white;
+  border-radius: 5%;
 }
 
-#updatebutton{
-    background-color: rgb(0, 0, 128);
-    border-color: rgb(0, 0, 128);
-    width: 120px;
-    height: 30px;
-    font-size:small;
-    color: white;
-    border-radius: 5%;
+#updatebutton {
+  background-color: rgb(0, 0, 128);
+  border-color: rgb(0, 0, 128);
+  width: 120px;
+  height: 30px;
+  font-size: small;
+  color: white;
+  border-radius: 5%;
 }
 
-#deletebutton{
-    background-color: rgb(0, 0, 128);
-    border-color: rgb(0, 0, 128);
-    width: 120px;
-    height: 30px;
-    font-size:small;
-    color: white;
-    border-radius: 5%;
+#deletebutton {
+  background-color: rgb(0, 0, 128);
+  border-color: rgb(0, 0, 128);
+  width: 120px;
+  height: 30px;
+  font-size: small;
+  color: white;
+  border-radius: 5%;
 }
 
-#selectbutton{
-    background-color: rgb(0, 0, 128);
-    border-color: rgb(0, 0, 128);
-    width: 130px;
-    height: 30px;
-    font-size:small;
-    color: white;
-    border-radius: 5%;
+#selectbutton {
+  background-color: rgb(0, 0, 128);
+  border-color: rgb(0, 0, 128);
+  width: 130px;
+  height: 30px;
+  font-size: small;
+  color: white;
+  border-radius: 5%;
 }
 
-#bookID{
-    width: 600px;
-    height: 80px;
-    position: relative;
-    top: 40px;
-    left: 45px;
+#selectallbutton {
+  background-color: rgb(0, 0, 128);
+  border-color: rgb(0, 0, 128);
+  width: 130px;
+  height: 30px;
+  font-size: small;
+  color: white;
+  border-radius: 5%;
 }
 
-#bookName{
-    width: 600px;
-    height: 80px;
-    position: relative;
-    top: 20px;
-    left: 45px;
+#labelinput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 10px;
 }
 
-label{
-    font-weight: bold;
+#bookID {
+  height: 80px;
 }
 
-input{
-    width: 550px;
-    height: 35px;
+#bookName {
+  height: 80px;
 }
 
-#authorName{
-    width: 600px;
-    height: 80px;
-    position: relative;
-    top: 0px;
-    left: 45px;
+label {
+  font-weight: bold;
 }
 
-#publishingCompanyName{
-    width: 600px;
-    height: 80px;
-    position: relative;
-    top: -20px;
-    left: 45px;
+input {
+  height: 35px;
 }
 
-#buttons{
-    width: 100%;
-    height: 50px;
-    position: relative;
-    top: -300px;
+#authorName {
+  height: 80px;
 }
 
-#confirmButton{
-    background-color: rgb(0, 0, 128);
-    border-color: rgb(0, 0, 128);
-    width: 100px;
-    height: 30px;
-    font-size:small;
-    color: white;
-    border-radius: 5%;
-    position: relative;
-    left: 432px;
-    top: 270px;
+#publishingCompanyName {
+  height: 80px;
 }
 
-#cancelarButton{
-    background-color: rgb(0, 0, 128);
-    border-color: rgb(0, 0, 128);
-    width: 100px;
-    height: 30px;
-    font-size:small;
-    color: white;
-    border-radius: 5%;
-    position: relative;
-    left: 56px;
-    top: 270px;
+#buttons {
+  width: 100%;
 }
 
-#table{
-    display: flex;
-    background-color: white;
-    position: relative;
-    width: 700px;
-    height: 370px;
-    border-radius: 5%;
+#confirmButton {
+  background-color: green;
+  border-color: green;
+  width: 100px;
+  height: 30px;
+  font-size: small;
+  color: white;
+  border-radius: 5%;
 }
 
-#col{
-    font-size: smaller;
+#cancelButton {
+  background-color: red;
+  border-color: red;
+  width: 100px;
+  height: 30px;
+  font-size: small;
+  color: white;
+  border-radius: 5%;
 }
 
-#row{
-    font-size: smaller;
+#card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 600px;
+  background-color: rgb(0, 0, 128);
+  border-radius: 5%;
 }
+
+#table {
+  background-color: white;
+  width: 99%;
+  height: 550px;
+  border-radius: 5%;
+}
+
+#col {
+  font-size: small;
+}
+
+#row {
+  font-size: small;
+}
+
+/*# sourceMappingURL=style.css.map */
