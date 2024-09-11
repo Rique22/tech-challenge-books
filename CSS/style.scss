@@ -42,7 +42,7 @@ main {
     width: 60%;
     height: 500px;
     background-color: $primary-color;
-    border-radius: 5%;
+    border-radius: $border-radius;
 }
 
 form {
@@ -50,9 +50,9 @@ form {
     justify-content: $center;
     align-content: $center;
     background-color: $secondary-color;
-    width: 99%;
+    width: $width-element;
     height: 440px;
-    border-radius: 5%;
+    border-radius: $border-radius;
 }
 
 #rowbutton {
@@ -64,51 +64,51 @@ form {
 #insertbutton {
     background-color: $primary-color;
     border-color: $primary-color;
-    width: 120px;
-    height: 30px;
+    width: $width-button;
+    height: $height-button;
     font-size: $font-size;
     color: $secondary-color;
-    border-radius: 5%;
+    border-radius: $border-radius;
 }
 
 #updatebutton {
     background-color: $primary-color;
     border-color: $primary-color;
-    width: 120px;
-    height: 30px;
+    width: $width-button;
+    height: $height-button;
     font-size: $font-size;
     color: $secondary-color;
-    border-radius: 5%;
+    border-radius: $border-radius;
 }
 
 #deletebutton {
     background-color: $primary-color;
     border-color: $primary-color;
-    width: 120px;
-    height: 30px;
+    width: $width-button;
+    height: $height-button;
     font-size: $font-size;
     color: $secondary-color;
-    border-radius: 5%;
+    border-radius: $border-radius;
 }
 
 #selectbutton {
     background-color: $primary-color;
     border-color: $primary-color;
-    width: 130px;
-    height: 30px;
+    width: $width-select-button;
+    height: $height-button;
     font-size: $font-size;
     color: $secondary-color;
-    border-radius: 5%;
+    border-radius: $border-radius;
 }
 
 #selectallbutton {
     background-color: $primary-color;
     border-color: $primary-color;
-    width: 130px;
-    height: 30px;
+    width: $width-select-button;
+    height: $height-button;
     font-size: $font-size;
     color: $secondary-color;
-    border-radius: 5%;
+    border-radius: $border-radius;
 }
 
 #labelinput{
@@ -148,23 +148,23 @@ input {
 }
 
 #confirmButton {
-    background-color: green;
-    border-color: green;
-    width: 100px;
-    height: 30px;
+    background-color: $confirm-button-color;
+    border-color: $confirm-button-color;
+    width: $width-row-button;
+    height: $height-button;
     font-size: $font-size;
     color: $secondary-color;
-    border-radius: 5%;
+    border-radius: $border-radius;
 }
 
 #cancelButton {
-    background-color: red;
-    border-color: red;
-    width: 100px;
-    height: 30px;
+    background-color: $cancel-button-color;
+    border-color: $cancel-button-color;
+    width: $width-row-button;
+    height: $height-button;
     font-size: $font-size;
     color: $secondary-color;
-    border-radius: 5%;
+    border-radius: $border-radius;
 }
 
 #card2 {
@@ -174,14 +174,14 @@ input {
     width: 95%;
     height: 600px;
     background-color: $primary-color;
-    border-radius: 5%;
+    border-radius: $border-radius;
 }
 
 #table {
     background-color: $secondary-color;
-    width: 99%;
+    width: $width-element;
     height: 550px;
-    border-radius: 5%;
+    border-radius: $border-radius;
 }
 
 #col {
