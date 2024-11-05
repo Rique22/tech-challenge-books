@@ -1,0 +1,133 @@
+@import "./variable.scss";
+
+//Lightening color
+@function lighteningColor($color, $percent) {
+    @return lighten($color, $percent);
+}
+
+//Styling body
+body {
+    display: $display;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: 10px;
+}
+
+//Styling nav
+nav {
+    width: $width-max;
+    background-color: $primary-color;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+//Styling title
+#linkTitle {
+    color: $secondary-color;
+}
+
+#linkTitle:hover {
+    color: lighteningColor($primary-color, $percent-color);
+}
+
+#linkTitle:active {
+    color: $primary-color;
+}
+
+//Styling link home
+#linkHome {
+    color: $secondary-color;
+}
+
+#linkHome:hover {
+    color: lighteningColor($primary-color, $percent-color);
+}
+
+#linkHome:active {
+    color: $primary-color;
+}
+
+//Styling link list
+#linkList {
+    color: $secondary-color;
+}
+
+#linkList:hover {
+    color: lighteningColor($primary-color, $percent-color);
+}
+
+#linkList:active {
+    color: $primary-color;
+}
+
+//Styling main
+main{
+    background-color: $secondary-color;
+    justify-content: $center;
+    align-content: $center;
+}
+
+//Styling home card
+#homeCard{
+    position: absolute;
+    background-color: $primary-color;
+    color: $secondary-color;
+    justify-content: $center;
+    align-content: $center;
+    height: 440px;
+    width: 85%;
+}
+
+//Styling row
+.row{
+    justify-items: $center;
+    align-items: $center;
+}
+
+//Styling col button home
+#colButtonHome{
+    position: relative;
+    top: 20px;
+    justify-items: $center;
+    align-items: $center;
+}
+
+//Styling col button list
+#colButtonList{
+    position: relative;
+    top: 20px;
+    justify-items: left;
+    align-items: left;
+}
+
+//Styling link home button
+#linkHomebutton{
+    background-color: $secondary-color;
+    width: 120px;
+    height: 40px;
+    border-radius: $border-radius;
+    border-color: $secondary-color;
+    border-width: 3px;
+}
+
+#linkHomebutton:active{
+    border-color: lighteningColor($primary-color, $percent-color);
+}
+
+//Styling link list button
+#linkListbutton{
+    background-color: $secondary-color;
+    width: 125px;
+    height: 40px;
+    border-radius: $border-radius;
+    border-color: $secondary-color;
+    border-width: 3px;
+}
+
+#linkListbutton:active{
+    border-color: lighteningColor($primary-color, $percent-color);
+}

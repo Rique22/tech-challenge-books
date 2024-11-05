@@ -8,6 +8,7 @@ body {
     gap: 10px;
 }
 
+//Styling header
 header {
     width: $width-max;
     text-align: $center;
@@ -120,11 +121,11 @@ form {
 }
 
 #bookID {
-    height: 80px;
+    height: $height-field;
 }
 
 #bookName {
-    height: 80px;
+    height: $height-field;
 }
 
 label {
@@ -136,11 +137,11 @@ input {
 }
 
 #authorName {
-    height: 80px;
+    height: $height-field;
 }
 
 #publishingCompanyName {
-    height: 80px;
+    height: $height-field;
 }
 
 #buttons {
